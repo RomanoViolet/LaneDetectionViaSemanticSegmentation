@@ -76,7 +76,7 @@ nSentinelObjectsEncountered = 0
 allFramesAreDone = False
 
 # For writing output video
-fullPathtoOutputVideo = os.path.join(os.path.dirname(ConfigurationForVideoSegmentation.fullyQualifiedPathToInputMovie), "out_" + os.path.basename(ConfigurationForVideoSegmentation.fullyQualifiedPathToInputMovie))
+fullPathtoOutputVideo = os.path.join(os.path.dirname(ConfigurationForVideoSegmentation.fullyQualifiedPathToOutputMovie), "out_" + os.path.basename(ConfigurationForVideoSegmentation.fullyQualifiedPathToInputMovie))
 writer = skvideo.io.FFmpegWriter(fullPathtoOutputVideo, outputdict={'-vcodec': 'libx264', '-b': '750100000'})
 
 while(not allFramesAreDone):

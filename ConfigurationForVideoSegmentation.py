@@ -9,6 +9,9 @@ PathtoSaveTrainedAugmentedModel = "./AugmentedVGG"
 # Location of input video to segment (optional)
 fullyQualifiedPathToInputMovie = "./InputVideo/driving.mp4"
 
+# Location of output video as a result of segmentation (optional)
+fullyQualifiedPathToOutputMovie = "./OutputVideo/driving.mp4"
+
 # Number of threads to use for marking. Adjust depending up the size of the graphics card
 nProcesses = cpu_count() - 6
 
