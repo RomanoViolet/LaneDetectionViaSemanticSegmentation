@@ -1,0 +1,4 @@
+VGGModel/vgg filter=lfs diff=lfs merge=lfs -text
+VGGModel/vgg/saved_model.pb filter=lfs diff=lfs merge=lfs -text
+VGGModel/vgg/variables/variables.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
+VGGModel/vgg/variables/variables.index filter=lfs diff=lfs merge=lfs -text
