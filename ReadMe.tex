@@ -1,0 +1,69 @@
+
+% author(s) Devendra Rai
+% date Now.
+%% Thanks: https://www.soimort.org/notes/161117/
+\documentclass{article}
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{array}
+% Settings
+\linespread{1.1}
+\pagestyle{fancy}
+
+% Macros
+\providecommand{\tabularnewline}{\\}
+\title{Udacity Lane Detection Using Semantic Segmentation}
+
+% Suppress date
+\date{\vspace{-5ex}}
+%\date{}  % Toggle commenting to test
+
+\begin{document}
+
+\maketitle
+% Pandoc does not seem to render title string in the markdown.
+
+% Repeat title string so that pandoc can put it in the markdown.
+%\section{Udacity Path Planning Project}
+
+\section{Context}
+This project implements the “Semantic Segmentation” project required in Semester 3 of the Udacity’s \href{https://de.udacity.com/course/self-driving-car-engineer-nanodegree--nd013}{“Self Driving Car NanoDegree Program”} 
+
+\section{Pre-requisites}
+The project requires:
+\begin{enumerate}
+\item \textbf{Pretrained VGG Model}: Frozen VGG model, downloadble from \href{https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/vgg.zip}{here}. Look at \texttt{Readme.md} in the folder \texttt{'VGGModel'}.
+
+\item \textbf{Kitti Road Dataset}: Required for training and testing of the trained model. Downloadable from 
+\href{https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/advanced\_deep\_learning/data\_road.zip}{here}. Look at \texttt{Readme.md} in the folder \\ \texttt{'KittiDataSet'}.
+
+\item \textbf{Python Dependencies}: All python dependencies required for executing the project are listed in the \texttt{environment.yml}. The first step of \texttt{run.sh} installs all required dependencies assuming \texttt{[ana]conda} environment is available. See the section 4 "Running the Project" below.
+\end{enumerate}
+
+\textbf{Note. }Automated steps are not fully tested. Watch out for failures.
+
+\section{About This Project}
+Starting with a pre-trained VGG model, the project add two upscaling (specifically, deconvolution) layers in order to match the size of the network-output to the size of the input image, which is a requirement for semantic segmentation. 
+
+The following papers are worth reading about the topic:
+\begin{itemize}
+   \item \href{https://arxiv.org/pdf/1511.00561}{SegNet: A Deep Convolutional Encoder-Decoder Architecture}
+   \item \href{https://people.eecs.berkeley.edu/~jonlong/long_shelhamer_fcn.pdf}{Fully Convolutional Networks for Semantic Segmentation}
+\end{itemize}
+
+\section{Running the Project}
+\begin{enumerate}
+\item Execute \texttt{run.sh}. The script will execute semantic segmentation both for image inputs and video inputs. Comment out steps as required.
+    \end{enumerate}
+
+
+
+\end{document}
