@@ -46,7 +46,7 @@ def isKittiDataSetAvailable():
         print(
             "Kitti data set is not available. Expected a folder 'data_road' at location {a:s}. Download from: {b:s}, and thereafter Extract the dataset in the \'KittiDataSet\' folder. This will create the subfolder \'data_road\' with all the training and test images".format(
                 a=os.path.join(Configuration.PathtoKITTIDataSet, "data_road"),
-                b='http://www.cvlibs.net/datasets/kitti/eval_road.php'))
+                b='https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/advanced_deep_learning/data_road.zip'))
         sys.stdout.flush()
         assert False, "Kitti data set is not available."
 

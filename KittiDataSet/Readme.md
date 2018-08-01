@@ -1,0 +1,1 @@
+Download the Kitti Road dataset from https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/advanced_deep_learning/data_road.zip . Extract the dataset in the data folder. This will create the folder data_road with all the training and test images.
