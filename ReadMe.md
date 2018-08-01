@@ -19,8 +19,7 @@ The project requires:
 2.  **Kitti Road Dataset**: Required for training and testing of the
     trained model. Downloadable from
     [here](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/advanced_deep_learning/data_road.zip).
-    Look at `Readme.md` in the folder  
-    `’KittiDataSet’`.
+    Look at `Readme.md` in the folder `’KittiDataSet’`.
 
 3.  **Python Dependencies**: All python dependencies required for
     executing the project are listed in the `environment.yml`. The first
